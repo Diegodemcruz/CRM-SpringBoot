@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+	<header th:fragment="cabecalho">
+
+		<nav
+			class="navbar navbar-inverse navbar navbar-dark bg-secondary fixed-top">
+
+			<div class="container-fluid">
+				<button type="button" class="btn btn-secondary navbar-toggle ">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<img class="mr-3" alt="" src="image/senac.png" width="3%"> <a
+					class="navbar-brand" href="#"> Senac - CRM </a> <a
+					class="text-white bg-dark nav-link dropdown-toggle ml-md-auto d-none d-md-flex "
+					data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+					aria-expanded="false">Opções</a>
+				<div class="dropdown-menu dropdown-menu-right ">
+					<a class="dropdown-item" th:href="@{/usuario/cadastrar}">Adicionar novo Usuario</a>
+					<a class="dropdown-item" th:href="@{/usuario/listar}">Lista de Usuarios</a> <a
+						class="dropdown-item" th:href="@{/}">Sair</a>
+				</div>
+				
+			</div>
+
+		</nav>
+	</header>
+
+</body>
+</html>

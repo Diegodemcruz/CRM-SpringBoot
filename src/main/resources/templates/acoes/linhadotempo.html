@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+<meta charset="UTF-8">
+
+<style>
+*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+}
+.container{
+  width: 300px;
+  margin: 30px auto;
+}
+.line{
+  padding: 5px 0 5px 30px;
+  border-left: 3px solid #5ACFD6;
+}
+p{
+  text-align: center;
+  width:250px;
+  padding: 10px;
+  border:1px solid #5ACFD6;
+  color: #03254a;
+  margin: 20px 0;
+  position: relative;
+}
+p:before{
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #D2FAFB;
+  border-radius: 50%;
+  background-color: #5ACFD6;
+}
+p:after{
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid #5ACFD6;
+}
+
+</style>
+</head>
+
+<section class="layout-content" layout:fragment="corpo">
+ 
+ <div class="container">
+  <div class="line" ><!-- th:each="p : ${acoes}" -->
+    <p >Li Europan lingues es membres del sam familie. Lor separat existentie es un myth .</p> <!-- th:text="${p.cliente_id}" -->
+
+    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth .</p>
+
+    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth .</p>
+
+    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth .</p>
+    
+    <p> 
+  </div>
+</div>
+
+
+</section>
+

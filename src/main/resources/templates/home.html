@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+
+		<section class="layout-content" layout:fragment="corpo">
+
+	<div>
+			<nav class="navbar navbar-expand-md bg-light">
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><i class="oi oi-caret-right"></i>
+							<span>Home</span></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row ">
+			
+			<div class="text-white mx-2 my-5 col-sm" style="width: 250px;">
+					<a th:href="@{acoes/acaoUsuarioCliente}" style="text-decoration: none" class="btn btn-outline-secondary">						
+						<div class="card-body">
+							<h5 class="card-title">Ação</h5>
+							<p class="card-text">Acesse e aqui e entre no painel de Ação Usuario Clinete </p>
+						</div>
+					</a>
+				</div>
+			
+			
+				<div class="text-white mx-3 my-5 col-sm" style="width: 250px">
+					<a th:href="@{acoes/linhaDoTempo}" style="text-decoration: none" class="btn btn-outline-danger">					
+						<div class="card-body">
+							<h5 class="card-title">Linha do Tempo</h5>
+							<p class="card-text">Acesse aqui e verifique o historio de ações nos clientes </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="text-white my-5 col-sm" style="width: 250px;">
+					<a th:href="@{funil/drag}" style="text-decoration: none" 	class="btn btn-outline-primary">						
+						<div class="card-body">
+							<h5 class="card-title">Funil de Vendas</h5>
+							<p class="card-text"> Acesse aqui e gerencie seus painel de vendas atualizado
+							</p>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="text-white mx-2 my-5 col-sm" style="width: 250px;">
+					<a th:href="@{agenda/agenda}" style="text-decoration: none" 	class="btn btn-outline-secondary">
+						<div class="card-body">
+							<h5 class="card-title">Agenda </h5>
+							<p class="card-text">Acesse sua agenda e verifique seus Compromissos</p>
+						</div>
+					</a>
+				</div>
+				
+				
+			</div>
+			
+			<div class="container">
+			<h3 class="ml-5"> Gráficos - Relatorios</h3>
+			<hr>
+			<div class="row">
+			
+			
+			
+			<div id="container1" style="height: 500px;"></div>
+			<div id="container" style="min-width: 590px; height: 400px; max-width: 400px; margin: 0 auto"></div>
+			</div>
+			
+			<div class="row">
+			<div id="container3"></div>
+			
+			<div id="container4"></div>
+			</div>
+			
+			</div>
+	<script th:src="@{js/highCharts.js}"></script>
+	<script th:src="@{js/highcharts-3d.js}"></script>
+	<script th:src="@{js/cylinder.js}"></script>
+	<script th:src="@{js/funnel3d.js}"></script>
+	<script th:src="@{js/exporting.js}"></script>
+	<script th:src="@{js/export-data.js}"></script>
+	
+	<script th:src="@{js/jquery-3.4.1.js}"></script>
+	<script th:src="@{js/main.js}"></script>
+	</div>
+	</section>
+
+
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+
+			<nav class="sidebar sidebar-open" th:fragment="nav-sidebar">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a class="nav-link " th:href="@{/home}"> <i
+							class="oi oi-home"></i> <span>Home</span>
+					</a></li>
+				</ul>
+
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active">Cliente</span></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/cliente/cadastrar}"> <i class="oi oi-plus"></i> <span>Cadastrar </span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/cliente/listar}"> <i class="oi oi-spreadsheet"></i> <span>Listar </span>
+					</a></li>
+				</ul>
+				
+					<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active" >Ofertas</span></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/oferta/cadastrar}"> <i class="oi oi-plus"></i> <span>Cadastrar </span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/oferta/listar}"> <i
+							class="oi oi-spreadsheet"></i> <span>Listar </span>
+					</a></li>
+				</ul>
+				
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active" >Produto	</span></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/produto/cadastrar}"> <i class="oi oi-plus"></i> <span>Cadastrar</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/produto/listar}"> <i class="oi oi-spreadsheet"></i>
+							<span>Listar </span>
+					</a></li>
+				</ul>
+			</nav>
+		
+
+</body>
+</html>
